@@ -153,13 +153,19 @@
             padding: 1rem;
         }
         .card-box {
-            text-align: center;
-            background: white;
-            border-radius: 1rem;
-            padding: 2rem;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            text-decoration: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Adjust this as needed */
+    height: 300px; /* Increase card size */
+    
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card-box:hover {
             transform: translateY(-8px);
@@ -184,7 +190,7 @@
         /* Text Colors */
         .title {
             color: #1f2937;
-            font-size: 1.5rem;
+            font-size: 3.5rem;
             font-weight: 600;
         }
         .description {
@@ -257,7 +263,7 @@
                 <div class="title">Land Unit Conversion</div>
                 <p class="description">Convert between different land measurement units</p>
             </a>
-
+        
             <!-- Paint -->
             <a href="paint.html" class="card-box">
                 <div class="icon-box">
@@ -266,7 +272,7 @@
                 <div class="title">Paint</div>
                 <p class="description">Calculate paint quantities needed</p>
             </a>
-
+        
             <!-- Plaster/Brickwork -->
             <a href="plaster_brickwork.html" class="card-box">
                 <div class="icon-box">
@@ -275,7 +281,17 @@
                 <div class="title">Plaster/Brickwork</div>
                 <p class="description">Calculate materials for construction</p>
             </a>
+        
+            <!-- Triangulation -->
+            <a href="tri.html" class="card-box">
+                <div class="icon-box">
+                    <i class="bi bi-triangle"></i>
+                </div>
+                <div class="title">Triangulation</div>
+                <p class="description">Calculate the area of multiple triangles for bigger plots</p>
+            </a>
         </div>
+        
     </div>
       
     <!-- Page Header Start -->
